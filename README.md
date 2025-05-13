@@ -114,7 +114,7 @@ print('patient id:', patient_data['patient_id'].values[0], 'risk:', risk.item())
 
 ## Evaluation 
 
-To reproduce the results in our paper, we provide a reproducible dataset on [SR-CRC](https://www.ebi.ac.uk/biostudies/studies/S-BIAD1285) dataset.
+To reproduce the results in our paper, we provide a reproducible result on [SR-CRC](https://www.ebi.ac.uk/biostudies/studies/S-BIAD1285) dataset.
 Please refer to `demo.ipynb` for a demonstration. 
 * First download our processed SR-CRC frozen features [here](https://pan.baidu.com/s/17_CJyuy5C6eDNozGmVIHGw?pwd=2ymk)
 * Put the extracted features to *./features/* 
