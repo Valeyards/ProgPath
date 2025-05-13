@@ -124,7 +124,12 @@ Please refer to `demo.ipynb` for a demonstration.
 ```shell
 python3 eval.py --config_path projects/configs/cfg_progpath.yaml
 ```
-The computed risk scores for this cohort and corresponding Kaplan-Meier curve will be stored at `exp_progpath/evaluation/sr_crc/`
+The C-index and log-rank p-value will be printed to the screen. 
+```python
+sr_crc cindex_now: 0.7765380443204711 pvalue: 2.496161383249256e-10
+```
+
+The computed risk scores for this cohort and the corresponding Kaplan-Meier curve will be stored at `exp_progpath/evaluation/sr_crc/`
 
 ## Acknowledgements
 The project was built on many amazing repositories: Virchow, [CLAM](https://github.com/mahmoodlab/CLAM), and [PORPOISE](https://github.com/mahmoodlab/PORPOISE). We thank the authors and developers for their contributions.
