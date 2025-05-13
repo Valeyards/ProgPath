@@ -25,7 +25,7 @@ pip install -r requirements.txt
 ```
 
 ## Model Download
-The ProgPath model can be accessed from [here](https://pan.baidu.com/s/1Niq1e9qidM0u6QuYjcN_kg?pwd=5ne3)
+The ProgPath model can be accessed from [here]([https://pan.baidu.com/s/1Niq1e9qidM0u6QuYjcN_kg?pwd=5ne3](https://drive.google.com/file/d/1Qqgl1HwP8W2_unsBNRvcF9XAxjIy6KVf/view?usp=sharing))
 
 ## Image Processing Pipeline
 
