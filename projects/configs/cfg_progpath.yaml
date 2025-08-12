@@ -1,0 +1,43 @@
+General:
+    result_dir: &result_dir exp_progpath
+
+Data:
+    use_clinical: True
+    use_multimodal: True
+    time_v: &time dss
+    loss: &loss cox
+    n_classes: 2
+    dataset_name: SurvivalBagDataset
+    columns: ['filename', 'age', 'sex', 'stage']
+
+    external_datasets:
+     - {
+        project: sr_crc,
+        data_dir: features/,
+        csv_dir: csvs/sr_crc.csv
+    }
+
+Model:
+    input_embed: 6
+    model_type: stable
+    model_name: ProgPath
+    size_arg: virchow2
+    logits_field: bag_logits
+Train:
+    optimizer: AdamW
+    lr: 1.0e-4
+    max_epochs: 20
+    train_function: !join [survival_, *loss]
+    val_function: !join [survival_, *loss, '_multi']
+    CosineAnnealingLR:
+        T_max: 20
+        eta_min: 1.0e-6
+    Early_stopping:
+        type: cindex
+        patient: 10
+        stop_epoch: 20
+    batch_size : 256
+    num_worker: 8
+    is_augment: True
+    balance: True
+
