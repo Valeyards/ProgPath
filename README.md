@@ -132,7 +132,7 @@ sr_crc cindex_now: 0.7765380443204711 pvalue: 2.496161383249256e-10
 The computed risk scores for this cohort and the corresponding Kaplan-Meier curve will be stored at `exp_progpath/evaluation/sr_crc/`
 
 ## Acknowledgements
-The project was built on many amazing repositories: Virchow, [CLAM](https://github.com/mahmoodlab/CLAM), and [PORPOISE](https://github.com/mahmoodlab/PORPOISE). We thank the authors and developers for their contributions.
+The project was built on many amazing repositories: [Virchow2](https://huggingface.co/paige-ai/Virchow2), [CLAM](https://github.com/mahmoodlab/CLAM), and [PORPOISE](https://github.com/mahmoodlab/PORPOISE). We thank the authors and developers for their contributions.
 
 ## Issue
 Please open new threads or address questions to yuanw@stu.scu.edu.cn or xiyue.wang.scu@gmail.com
@@ -140,4 +140,5 @@ Please open new threads or address questions to yuanw@stu.scu.edu.cn or xiyue.wa
 ## License
 
 ProgPath is made available under the CC BY-NC-SA 4.0 License and is available for non-commercial academic purposes.
+
 
